@@ -1,4 +1,4 @@
-module shippingAddr
+module github.com/dinzhen12306/shippingAddr
 
 go 1.21.3
 

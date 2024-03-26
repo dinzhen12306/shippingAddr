@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"shippingAddr/internal/logic"
-	"shippingAddr/internal/svc"
-	"shippingAddr/shippingAddrs"
+	"github.com/dinzhen12306/shippingAddr/internal/logic"
+	"github.com/dinzhen12306/shippingAddr/internal/svc"
+	"github.com/dinzhen12306/shippingAddr/shippingAddrs"
 )
 
 type ShippingAddrServer struct {

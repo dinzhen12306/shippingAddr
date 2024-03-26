@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"shippingAddr/internal/config"
+	"github.com/dinzhen12306/shippingAddr/internal/config"
 )
 
 type ServiceContext struct {

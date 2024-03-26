@@ -6,7 +6,7 @@ package shippingaddrclient
 import (
 	"context"
 
-	"shippingAddr/shippingAddrs"
+	"github.com/dinzhen12306/shippingAddr/shippingAddrs"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

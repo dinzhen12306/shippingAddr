@@ -3,11 +3,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	"shippingAddr/internal/config"
-	"shippingAddr/internal/server"
-	"shippingAddr/internal/svc"
-	"shippingAddr/models/mysql"
-	"shippingAddr/shippingAddrs"
+	"github.com/dinzhen12306/shippingAddr/internal/config"
+	"github.com/dinzhen12306/shippingAddr/internal/server"
+	"github.com/dinzhen12306/shippingAddr/internal/svc"
+	"github.com/dinzhen12306/shippingAddr/models/mysql"
+	"github.com/dinzhen12306/shippingAddr/shippingAddrs"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

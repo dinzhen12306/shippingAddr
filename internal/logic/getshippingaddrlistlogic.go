@@ -2,9 +2,9 @@ package logic
 
 import (
 	"context"
-	"shippingAddr/internal/svc"
-	"shippingAddr/models/mysql"
-	"shippingAddr/shippingAddrs"
+	"github.com/dinzhen12306/shippingAddr/internal/svc"
+	"github.com/dinzhen12306/shippingAddr/models/mysql"
+	"github.com/dinzhen12306/shippingAddr/shippingAddrs"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

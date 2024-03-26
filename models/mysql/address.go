@@ -2,12 +2,12 @@ package mysql
 
 import (
 	"fmt"
+	"github.com/dinzhen12306/shippingAddr/internal/config"
+	"github.com/dinzhen12306/shippingAddr/internal/svc"
+	pb "github.com/dinzhen12306/shippingAddr/shippingAddrs"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"log"
-	"shippingAddr/internal/config"
-	"shippingAddr/internal/svc"
-	pb "shippingAddr/shippingAddrs"
 )
 
 type Address struct {
