@@ -1,0 +1,55 @@
+syntax = "proto3";
+option go_package = "./shippingAddrs";
+package shippingAddr;
+
+message ShippingAddress {
+  int64  ID              = 10;
+  int64  UserID          = 20;
+  string RecipientName   = 30;
+  string PhoneNumber     = 40;
+  string Location        = 50;
+  string DetailedAddress = 60;
+  string Tabs            = 70;
+  int64  IsDefault       = 80;
+}
+
+service ShippingAddr {
+  rpc GetShippingAddrList(GetShippingAddrListReq) returns (GetShippingAddrListResp);
+  rpc GetShippingAddr    (GetShippingAddrReq)     returns (GetShippingAddrResp);
+  rpc CreateShippingAddr (CreateShippingAddrReq)  returns (CreateShippingAddrResp);
+  rpc UpdateShippingAddr (UpdateShippingAddrReq)  returns (UpdateShippingAddrResp);
+  rpc DeleteShippingAddr (DeleteShippingAddrReq)  returns (DeleteShippingAddrResp);
+}
+
+message GetShippingAddrListReq{
+  map<string,string> Where = 10;
+}
+message GetShippingAddrListResp{
+  repeated ShippingAddress Data = 10;
+}
+
+message GetShippingAddrReq{
+  map<string,string> Where = 10;
+}
+message GetShippingAddrResp{
+  ShippingAddress Data = 10;
+}
+
+message CreateShippingAddrReq{
+  ShippingAddress Data = 10;
+}
+message CreateShippingAddrResp{
+  int64 ID = 10;
+}
+
+message UpdateShippingAddrReq{
+  ShippingAddress Data = 10;
+}
+message UpdateShippingAddrResp{
+  int64 ID = 10;
+}
+
+message DeleteShippingAddrReq{
+  int64 ID = 10;
+}
+message DeleteShippingAddrResp{}
